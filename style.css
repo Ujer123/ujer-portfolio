@@ -1,0 +1,219 @@
+body{
+    background-color: #1f242d;
+    padding-top: 10%;
+    color: white;
+    
+}
+
+
+.navbar{
+    background-color: #1f242d !important;
+    opacity: 0.8;
+}
+
+
+.social-media a {
+    box-shadow: 0 0 10px 0  #0ef;
+    background-color: #0ef ;
+    color: #323946;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    box-shadow: none;
+    background-color: white;
+
+}
+
+.cv-btn{
+    box-shadow: 0 0 20px 0  #0ef;
+}
+
+.cv-btn:hover{
+    box-shadow: none;
+}
+
+section{
+    min-height: 100vh;
+    /* background-color: #1f242d; */
+    
+    
+}
+
+.home-img{
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#about{
+    background-color: #323946;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #0ef;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    
+}
+
+.check{
+    color: #0ef;
+}
+
+#skills i{
+    font-size: 100px;
+    border: 2px solid #0ef;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0  #0ef;
+}
+
+
+
+#projects{
+    background-color: #323946;
+}
+
+#projects img{
+    padding: 2%;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 10px 0  #0ef;
+    transition: .5s ease;
+}
+
+
+
+
+.portfolio-c .portfolio-p {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.portfolio-p:hover img {
+    transform: scale(1.09);
+}
+
+.portfolio-p .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0, .1), #0ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-p:hover .portfolio-layer {
+    transform: translateY(0);
+}
+
+
+
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 3rem;
+    box-shadow: 0 0 20px 0  #323946;
+    background-color: #0ef;
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: #323946;
+}
+
+
+
+.bxs-cog{
+    font-size: 20px;
+    
+    animation: rotate-animation 3s infinite linear;
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.btn-change {
+    transition: background-position .5s ease; 
+    background-size: 200% 100%; /* Set background size for gradient effect */
+    background-image: linear-gradient(to right, #0ef 50%, #000000 50%); /* Gradient for transition effect */
+    border: none;
+  }
+
+  .btn-change:hover {
+    background-position: -100% 0; 
+  }
+
+
+
+  #contact input{
+    background: #323946;
+  }
+
+  #contact form .input-box input,
+#contact form textarea {
+    padding: 10px;
+}
+
+#contact textarea{
+    background: #323946;
+}
+
+footer{
+    background: #323946;
+}
+
+@media screen and (max-width: 992px){
+    #contact input{
+        width: 239px;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    #contact input{
+        width: 100%;
+      }
+  }
