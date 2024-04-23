@@ -22,3 +22,37 @@ const typed = new Typed('.multiple-text',{
 })
 
 
+$(document).ready(function() {
+    $('#submit_form').submit(function(e) {
+      e.preventDefault(); // Prevent form submission
+  
+      // Get form data
+      var formData = {
+        username: $('#name').val(),
+        emailid: $('#email').val(),
+        mobileno: $('#mobile').val(),
+        subject: $('#subject').val(),
+        message: $('#message').val()
+      };
+  
+      // Send form data to Formspree
+      $.ajax({
+        type: 'POST',
+        url: 'https://formspree.io/ujermohd0@gmail.com',
+        data: formData,
+        dataType: 'json',
+        success: function(data) {
+          alert('Message sent successfully!');
+          $('#name').val('');
+          $('#email').val('');
+          $('#mobile').val('');
+          $('#subject').val('');
+          $('#message').val('');
+        },
+        error: function(xhr, status, error) {
+          console.error(xhr.responseText);
+          alert('Failed to send message. Please try again later.');
+        }
+      });
+    });
+  });

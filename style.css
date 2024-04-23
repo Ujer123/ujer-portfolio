@@ -1,8 +1,19 @@
 body{
-    background-color: #1f242d;
+    /* background-color: #1f242d; */
     padding-top: 10%;
     color: white;
     
+}
+
+.home {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    
+  /*  this is where the magic happens:  */
+    background-attachment: fixed;
 }
 
 
@@ -58,7 +69,7 @@ section{
 
 
 #about{
-    background-color: #323946;
+    background-color: #324646;
 }
 
 .nav-link::after {
@@ -77,6 +88,12 @@ section{
 
 .check{
     color: #0ef;
+}
+
+#skills{
+    background-image:url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 #skills i{
@@ -136,7 +153,13 @@ section{
 }
 
 
+.portfolio-layer h4{
+    color: #000000;
+}
 
+.portfolio-layer p {
+    color: #000;
+}
 
 .portfolio-layer a {
     display: inline-flex;
@@ -185,6 +208,12 @@ section{
     background-position: -100% 0; 
   }
 
+  #contact{
+    background-image: url(img/leo_visions-1o95WN5ekDg-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
 
 
   #contact input{
