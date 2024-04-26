@@ -2,15 +2,17 @@ body{
     /* background-color: #1f242d; */
     padding-top: 10%;
     color: white;
+    background-color: #000;
     
 }
 
 .home {
     height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+    /* background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80); */
+    background-color: #000;
     background-size: cover;
     background-position: center;
-    color: #000000;
+    color: white;
     
   /*  this is where the magic happens:  */
     background-attachment: fixed;
@@ -18,7 +20,8 @@ body{
 
 
 .navbar{
-    background-color: #1f242d !important;
+    background-color: black !important;
+    border-bottom: 2px solid #0ef;
     opacity: 0.8;
 }
 
@@ -69,7 +72,7 @@ section{
 
 
 #about{
-    background-color: #324646;
+    background-color: #282525;
 }
 
 .nav-link::after {
@@ -91,7 +94,8 @@ section{
 }
 
 #skills{
-    background-image:url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    /* background-image:url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80); */
+    background-color: black;
     background-attachment: fixed;
     height: 100vh;
 }
@@ -107,7 +111,7 @@ section{
 
 
 #projects{
-    background-color: #323946;
+    background-color: #282525;
 }
 
 #projects img{
@@ -209,7 +213,8 @@ section{
   }
 
   #contact{
-    background-image: url(img/leo_visions-1o95WN5ekDg-unsplash.jpg);
+    /* background-image: url(img/leo_visions-1o95WN5ekDg-unsplash.jpg); */
+    background-color: rgb(52, 49, 49);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -217,7 +222,8 @@ section{
 
 
   #contact input{
-    background: #323946;
+    /* background: #323946; */
+    background-color: white;
   }
 
   #contact form .input-box input,
@@ -226,11 +232,11 @@ section{
 }
 
 #contact textarea{
-    background: #323946;
+    background: white;
 }
 
 footer{
-    background: #323946;
+    background: #282525;
 }
 
 @media screen and (max-width: 992px){
