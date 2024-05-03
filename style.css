@@ -1,21 +1,24 @@
 body{
-    /* background-color: #1f242d; */
     padding-top: 10%;
     color: white;
     background-color: #000;
-    
+}
+
+.change-theme{
+    background-color: white;
 }
 
 .home {
     height: 100vh;
-    /* background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80); */
-    background-color: #000;
     background-size: cover;
     background-position: center;
-    color: white;
-    
-  /*  this is where the magic happens:  */
-    background-attachment: fixed;
+}
+
+.home a{
+    font-size: larger;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
 }
 
 
@@ -25,8 +28,11 @@ body{
     opacity: 0.8;
 }
 
+.textchange{
+    color: black;
+}
 
-.social-media a {
+.social-media a{
     box-shadow: 0 0 10px 0  #0ef;
     background-color: #0ef ;
     color: #323946;
@@ -48,10 +54,7 @@ body{
 }
 
 section{
-    min-height: 100vh;
-    /* background-color: #1f242d; */
-    
-    
+    min-height: 100vh; 
 }
 
 .home-img{
@@ -72,7 +75,8 @@ section{
 
 
 #about{
-    background-color: #282525;
+    border-top: 2px solid #0ef;
+    border-bottom: 2px solid #0ef;
 }
 
 .nav-link::after {
@@ -86,18 +90,10 @@ section{
 
 .nav-link:hover::after {
     width: 100%;
-    
 }
 
 .check{
     color: #0ef;
-}
-
-#skills{
-    /* background-image:url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80); */
-    background-color: black;
-    background-attachment: fixed;
-    height: 100vh;
 }
 
 #skills i{
@@ -108,11 +104,11 @@ section{
     box-shadow: 0 0 10px 0  #0ef;
 }
 
-
-
 #projects{
-    background-color: #282525;
+    border-top: 2px solid #0ef;
+    border-bottom: 2px solid #0ef;
 }
+
 
 #projects img{
     padding: 2%;
@@ -184,7 +180,6 @@ section{
 
 .bxs-cog{
     font-size: 20px;
-    
     animation: rotate-animation 3s infinite linear;
 }
 
@@ -203,8 +198,8 @@ section{
 
 .btn-change {
     transition: background-position .5s ease; 
-    background-size: 200% 100%; /* Set background size for gradient effect */
-    background-image: linear-gradient(to right, #0ef 50%, #000000 50%); /* Gradient for transition effect */
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #0ef 50%, #000000 50%);
     border: none;
   }
 
@@ -212,43 +207,48 @@ section{
     background-position: -100% 0; 
   }
 
-  #contact{
-    /* background-image: url(img/leo_visions-1o95WN5ekDg-unsplash.jpg); */
-    background-color: rgb(52, 49, 49);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-
-
-  #contact input{
-    /* background: #323946; */
-    background-color: white;
-  }
-
-  #contact form .input-box input,
-#contact form textarea {
-    padding: 10px;
-}
-
-#contact textarea{
-    background: white;
-}
 
 footer{
-    background: #282525;
+    border-top: 2px solid #0ef;
 }
 
-@media screen and (max-width: 992px){
-    #contact input{
-        width: 239px;
-    }
-    
+
+.form{
+    background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #fff;
+}
+
+.form .group{
+    padding: 0 15px;
+}
+
+.form label{
+    padding: 0 18px;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+
+.tright{
+    margin: 25px 0;
+}
+
+.but-res{
+    margin-right: 10px;
+}
+
+.but-sub{
+    margin-right: 18px;
 }
 
 
 @media screen and (max-width: 600px) {
-    #contact input{
-        width: 100%;
+      .form-switch{
+        margin-left: 15px !important;
       }
+
+    #contact{
+        min-height: 80vh; 
+    }
   }
