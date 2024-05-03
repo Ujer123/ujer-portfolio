@@ -64,3 +64,56 @@ $(document).ready(function() {
 });
 
 
+
+
+
+$.validator.addMethod("letters", function(value, element) {
+  return this.optional(element) || value == value.match(/^[a-z0-9A-Z0-9\s-#&()]*$/);
+});
+
+
+$.validator.addMethod("emailtest", function(value, element) {
+  return this.optional(element) || /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/i.test(value);
+});
+
+$(document).ready(function(){
+  $("#submit_form").validate({
+     rules: {
+              username: {
+                  required: true,
+                  minlength: 3,
+                  maxlength: 35,
+                  letters: true
+              },
+              mobileno: {
+                  required: true,
+                  minlength: 10,
+                  maxlength: 10,
+                  digits: true
+              },
+              emailid: {
+                  emailtest: true,
+                  required: true,
+                  email: true
+              },
+          },
+
+          messages: {
+              username: {
+                  required: "username field is required",
+                  letters: "Must character only",
+                  maxlength: "Please enter 35 Characters only"
+              },
+              emailid: {
+                  required: "email field is required",
+                  email: "Please enter a valid email id",
+                  emailtest: "Please enter a valid email address"
+              },
+              mobileno: {
+                  digits: "Please enter a valid mobile number",
+                  minlength: "Please enter 10 digits only",
+                  maxlength: "Please enter 10 digits only"
+              },
+          }
+  });
+});

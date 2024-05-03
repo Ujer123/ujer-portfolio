@@ -305,37 +305,37 @@
           <div class="row">
             <div class="col d-flex justify-content-center">
 
-              <form class="form">
+              <form action="home.html" id="submit_form" method="POST" class="form">
                 <h4 class="fw-bolder text-center contact-change">Contact <span class="check">Me!</span></h4>
                 
                 <label for="name">Full Name:</label>
                 <div class="group">
-                  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <input type="text" name="username" class="form-control" placeholder="Full Name">
                 </div>
                 
 
                 <label for="number">Contact No:</label>
                 <div class="group">
-                  <input type="number" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <input type="number" name="mobileno" class="form-control" placeholder="Mobile No">
                 </div>
                 
 
                 <label for="name">Email:</label>
                 <div class="group">
-                  <input type="email" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <input type="email" name="emailid" class="form-control" placeholder="Email">
                 </div>
                 
 
                 <label for="name">Message:</label>
                 <div class="group">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2" style="height: 100px"></textarea>
                 </div>
                 
 
 
                 <div class="tright d-flex justify-content-end">
-                  <a href=""><button class="btn btn-outline-warning but-res" type="Reset"><i class='bx bx-refresh' ></i> Reset </button></a>
-                  <a href=""><button class="btn btn-outline-info but-sub" type="Submit">Submit <i class='bx bxs-paper-plane' ></i></button></a>
+                  <a href=""><button class="btn btn-outline-warning but-res" type="reset"><i class='bx bx-refresh' ></i> Reset </button></a>
+                  <a href=""><button class="btn btn-outline-info but-sub" type="submit">Submit <i class='bx bxs-paper-plane' ></i></button></a>
                 </div>
               </form>
             </div>
@@ -369,7 +369,8 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
