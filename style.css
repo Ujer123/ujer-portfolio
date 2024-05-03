@@ -212,6 +212,10 @@ footer{
     border-top: 2px solid #0ef;
 }
 
+.form_change{
+    background: url(https://images.unsplash.com/photo-1541119638723-c51cbe2262aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF5JTIwc2t5fGVufDB8fDB8fHww) !important;
+}
+
 
 .form{
     background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
@@ -250,5 +254,9 @@ footer{
 
     #contact{
         min-height: 80vh; 
+    }
+
+    #home{
+        margin-bottom: 30px;
     }
   }

@@ -59,6 +59,7 @@ $(document).ready(function() {
 
   $(".form-check-input").click(function(){
     $("h1, h2, p, h3, i, h5").toggleClass("textchange");
+    $(".form").toggleClass("form_change");
     $("body").toggleClass("change-theme");
 });
 
